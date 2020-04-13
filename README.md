@@ -2,7 +2,7 @@
 A cheat-sheet for creating web apps with the Django framework using the Python language. Most of the summaries and examples are based off [the official documentation](https://docs.djangoproject.com/en/2.0/) for Django v2.0.
 
 ## Sections
-- :snake: [Initializing pipenv](#snake-initializing-pipenv-optional) (optional)
+- :snake: [Create environment](#create-environment)
 - :blue_book: [Creating a project](#blue_book-creating-a-project)
 - :page_with_curl: [Creating an app](#page_with_curl-creating-an-app)
 - :tv: [Creating a view](#tv-creating-a-view)
@@ -12,12 +12,13 @@ A cheat-sheet for creating web apps with the Django framework using the Python l
 - :man: [Using the Admin page](#man-using-the-admin-page)
 
 
-## :snake: Initializing pipenv (optional)
-- Make main folder with `$ mkdir <folder>` and navigate to it with `$ cd <folder>`
-- Initialize pipenv with `$ pipenv install`
-- Enter pipenv shell with `$ pipenv shell`
-- Install django with `$ pipenv install django`
-- Install other package dependencies with `$ pipenv install <package_name>`
+## :snake: Create environment
+```
+$ mkdir <folder>
+$ cd <folder>
+$ python3 -m venv venv
+$ source ./venv/bin/activate
+```
 
 ## :blue_book: Creating a project
 - Navigate to main folder with `$ cd <folder>`
