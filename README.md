@@ -2,7 +2,7 @@
 A cheat-sheet for creating web apps with the Django framework using the Python language. Most of the summaries and examples are based off [the official documentation](https://docs.djangoproject.com/en/2.0/) for Django v2.0.
 
 ## Sections
-- :snake: [Create environment](#create-environment)
+- :snake: [Create environment](#snake-create-environment)
 - :blue_book: [Creating a project](#blue_book-creating-a-project)
 - :page_with_curl: [Creating an app](#page_with_curl-creating-an-app)
 - :tv: [Creating a view](#tv-creating-a-view)
@@ -10,14 +10,16 @@ A cheat-sheet for creating web apps with the Django framework using the Python l
 - :ticket: [Creating a model](#ticket-creating-a-model)
 - :postbox: [Creating model objects and queries](#postbox-creating-model-objects-and-queries)
 - :man: [Using the Admin page](#man-using-the-admin-page)
+- [Extra](#extra)
 
 
 ## :snake: Create environment
 ```
 $ mkdir <folder>
 $ cd <folder>
-$ python3 -m venv venv
+$ python -m venv venv
 $ source ./venv/bin/activate
+$ pip install Django
 ```
 
 ## :blue_book: Creating a project
@@ -304,3 +306,8 @@ from .models import Author, Book
 admin.site.register(Author)
 admin.site.register(Book)
 ```
+
+## Extra
+- upgrade pip: `pip install --upgrade pip`
+- freeze requirements: `pip freeze > requirements.txt`
+- install packages from requirements.txt: `pip install -r requirements.txt`
